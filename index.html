@@ -166,7 +166,22 @@
           <button class="btn btn--ghost" id="clear-key-btn">Remove key</button>
         </div>
       </div>
-
+      
+<div class="panel" style="max-width:520px; margin-top:20px;">
+        <div class="field">
+          <label class="field__label" for="giphy-key-input">Giphy API key</label>
+          <input class="text-input" id="giphy-key-input" type="password" placeholder="Paste your Giphy API key" autocomplete="off" />
+        </div>
+        <p style="font-size:var(--fs-xs); color:var(--text-faint); margin-bottom:16px;">
+          Used to pull matching GIFs on the Meme tab. Stored in localStorage on this device only.
+          Get a free key at <a href="https://developers.giphy.com" target="_blank" rel="noopener" style="color:var(--thread);">developers.giphy.com</a>.
+        </p>
+        <div style="display:flex; gap:10px;">
+          <button class="btn btn--primary" id="save-giphy-key-btn">Save key</button>
+          <button class="btn btn--ghost" id="clear-giphy-key-btn">Remove key</button>
+        </div>
+      </div>
+      
       <div class="panel" style="max-width:520px; margin-top:20px;">
         <h3 style="font-size:var(--fs-md); margin-bottom:12px;">Data</h3>
         <button class="btn btn--ghost" id="clear-history-btn">Clear all history</button>
